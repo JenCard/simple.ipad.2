@@ -14,6 +14,7 @@ xhr.onload = function()
 		
 		var db = Ti.Database.open('feedDB')
 		db.execute('CREATE TABLE IF NOT EXISTS tblfeed (title VARCHAR(16) NOT NULL, url VARCHAR(16) NOT NULL)');
+		db.execute('DELETE FROM tblfeed');
 		
 		var doc = this.responseXML.documentElement;
 		var items = doc.getElementsByTagName("item");
