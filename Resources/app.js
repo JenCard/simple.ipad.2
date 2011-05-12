@@ -53,6 +53,8 @@ SplitViewApp.splitView.addEventListener('visible', function(e) {
 		SplitViewApp.detailWindow.leftNavButton = null;
 		SplitViewApp.masterWindow.button = null;
 		Ti.API.log('Removed button');
+		
+		
 	}
 });
 

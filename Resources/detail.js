@@ -22,7 +22,8 @@ var DETAIL_WINDOW = {};
 		}
 
 		//webView.url = "http://en.wikipedia.org/wiki/" + evtData.title;
-		webView.url = evtData.title;
+		webView.html = evtData.url;
+		//webView.html = "<b>hahahahahaah</b><br><br>fwefwefew"
 	}
 	
 	/**
